@@ -2,12 +2,12 @@
   "id": "mmnnbubn4r42nfdjo0y",
   "name": "Cigna",
   "client": "HealthData Inc",
-  "phase": "Planning",
+  "phase": "Sign-off",
   "githubKeyword": "Cigna",
   "enabledSources": [
     "github"
   ],
   "createdAt": "2026-03-12T15:52:07.235Z",
-  "savedAt": "2026-03-12T15:52:07.281Z",
+  "savedAt": "2026-03-12T23:27:12.166Z",
   "_folderName": "cigna"
 }

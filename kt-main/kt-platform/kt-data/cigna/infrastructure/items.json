@@ -2,14 +2,69 @@
   "sectionId": "infrastructure",
   "projectId": "mmnnbubn4r42nfdjo0y",
   "projectName": "Cigna",
-  "savedAt": "2026-03-12T15:52:07.303Z",
-  "items": [],
+  "savedAt": "2026-03-12T23:27:12.199Z",
+  "items": [
+    {
+      "item": "Cloud architecture overview",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "orchestrator": [],
+      "compute": []
+    },
+    {
+      "item": "Orchestration platform setup",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "orchestrator": [],
+      "compute": []
+    },
+    {
+      "item": "Compute & storage resources inventory",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "orchestrator": [],
+      "compute": []
+    },
+    {
+      "item": "Infrastructure-as-code repo & docs",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "orchestrator": [],
+      "compute": []
+    },
+    {
+      "item": "Deployment & CI/CD pipeline",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "orchestrator": [],
+      "compute": []
+    },
+    {
+      "item": "Cost overview & budget owners",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "orchestrator": [],
+      "compute": []
+    }
+  ],
   "links": [],
   "summary": {
-    "total": 0,
+    "total": 6,
     "done": 0,
     "inProgress": 0,
     "blocked": 0,
-    "notStarted": 0
+    "notStarted": 6
   }
 }

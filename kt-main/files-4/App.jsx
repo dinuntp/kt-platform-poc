@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { AppProvider, useApp } from './AppContext';
 import { api } from './client';
 import Nav from './Nav';
@@ -10,6 +10,36 @@ import Guide from './Guide';
 
 function AppInner() {
   const { state, actions } = useApp();
+  const saveTimerRef = useRef(null);
+
+  // Auto-save active project to disk 2s after its data changes
+  useEffect(() => {
+    if (!state.activeProjectId) return;
+    const project = state.app.projects.find(p => p.id === state.activeProjectId);
+    if (!project) return;
+    const projectData = state.projectData[state.activeProjectId];
+    if (!projectData) return;
+
+    if (saveTimerRef.current) clearTimeout(saveTimerRef.current);
+    saveTimerRef.current = setTimeout(async () => {
+      actions.setSaving(true);
+      try {
+        const result = await api.saveProject(project, projectData);
+        // Capture _folderName from server if not already set on the project
+        if (result && result.folderName && !project._folderName) {
+          actions.updateProject({ ...project, _folderName: result.folderName });
+        }
+        actions.setLastSaved(Date.now());
+      } catch (e) {
+        // localStorage remains source of truth if server is offline
+      } finally {
+        actions.setSaving(false);
+      }
+    }, 2000);
+
+    return () => { if (saveTimerRef.current) clearTimeout(saveTimerRef.current); };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [state.projectData[state.activeProjectId], state.activeProjectId]);
 
   // Check server status on mount + every 30s
   useEffect(() => {

@@ -1,0 +1,137 @@
+{
+  "sectionId": "data_context",
+  "projectId": "mmnnbubn4r42nfdjo0y",
+  "projectName": "Cigna",
+  "savedAt": "2026-03-12T23:27:12.182Z",
+  "items": [
+    {
+      "item": "Domain glossary & business definitions",
+      "status": "In Progress",
+      "notes": "Data Context\nDomain glossary, entity definitions, data lineage narrative.\n",
+      "link": "Data Context Domain glossary, entity definitions, data lineage narrative.",
+      "docStatus": "Draft",
+      "domain": [
+        "Master Data",
+        "Reference"
+      ],
+      "sensitivity": [
+        "Restricted/PII",
+        "Confidential"
+      ]
+    },
+    {
+      "item": "Core entity definitions (customer, order, event…)",
+      "status": "In Progress",
+      "notes": "Data Context\nDomain glossary, entity definitions, data lineage narrative.",
+      "link": "Data Context Domain glossary, entity definitions, data lineage narrative.",
+      "docStatus": "Draft",
+      "domain": [
+        "Transactional",
+        "Behavioural"
+      ],
+      "sensitivity": [
+        "Restricted/PII",
+        "Confidential"
+      ]
+    },
+    {
+      "item": "Data lineage narrative (source → transform → output)",
+      "status": "In Progress",
+      "notes": "Data Context\nDomain glossary, entity definitions, data lineage narrative.\n",
+      "link": "Data Context Domain glossary, entity definitions, data lineage narrative.",
+      "docStatus": "Draft",
+      "domain": [
+        "Behavioural",
+        "Reference"
+      ],
+      "sensitivity": [
+        "Internal",
+        "Confidential"
+      ]
+    },
+    {
+      "item": "Data ownership & stewardship model",
+      "status": "In Progress",
+      "notes": "Data Context\nDomain glossary, entity definitions, data lineage narrative.",
+      "link": "Data Context Domain glossary, entity definitions, data lineage narrative.",
+      "docStatus": "Draft",
+      "domain": [
+        "Transactional",
+        "Behavioural"
+      ],
+      "sensitivity": [
+        "Public",
+        "Restricted/PII"
+      ]
+    },
+    {
+      "item": "Sensitive / PII data inventory",
+      "status": "In Progress",
+      "notes": "Data Context\nDomain glossary, entity definitions, data lineage narrative.",
+      "link": "Data Context Domain glossary, entity definitions, data lineage narrative.",
+      "docStatus": "Draft",
+      "domain": [
+        "Transactional",
+        "Master Data"
+      ],
+      "sensitivity": [
+        "Confidential",
+        "Restricted/PII"
+      ]
+    },
+    {
+      "item": "Data retention & archival policies",
+      "status": "In Progress",
+      "notes": "Data Context\nDomain glossary, entity definitions, data lineage narrative.",
+      "link": "Data Context Domain glossary, entity definitions, data lineage narrative.",
+      "docStatus": "Draft",
+      "domain": [
+        "Behavioural",
+        "Reference"
+      ],
+      "sensitivity": [
+        "Restricted/PII",
+        "Confidential"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "item": "Domain glossary & business definitions",
+      "url": "Data Context Domain glossary, entity definitions, data lineage narrative.",
+      "notes": "Data Context\nDomain glossary, entity definitions, data lineage narrative.\n"
+    },
+    {
+      "item": "Core entity definitions (customer, order, event…)",
+      "url": "Data Context Domain glossary, entity definitions, data lineage narrative.",
+      "notes": "Data Context\nDomain glossary, entity definitions, data lineage narrative."
+    },
+    {
+      "item": "Data lineage narrative (source → transform → output)",
+      "url": "Data Context Domain glossary, entity definitions, data lineage narrative.",
+      "notes": "Data Context\nDomain glossary, entity definitions, data lineage narrative.\n"
+    },
+    {
+      "item": "Data ownership & stewardship model",
+      "url": "Data Context Domain glossary, entity definitions, data lineage narrative.",
+      "notes": "Data Context\nDomain glossary, entity definitions, data lineage narrative."
+    },
+    {
+      "item": "Sensitive / PII data inventory",
+      "url": "Data Context Domain glossary, entity definitions, data lineage narrative.",
+      "notes": "Data Context\nDomain glossary, entity definitions, data lineage narrative."
+    },
+    {
+      "item": "Data retention & archival policies",
+      "url": "Data Context Domain glossary, entity definitions, data lineage narrative.",
+      "notes": "Data Context\nDomain glossary, entity definitions, data lineage narrative."
+    }
+  ],
+  "summary": {
+    "total": 6,
+    "done": 0,
+    "inProgress": 6,
+    "blocked": 0,
+    "notStarted": 0
+  }
+}

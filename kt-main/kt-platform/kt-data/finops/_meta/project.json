@@ -3,11 +3,11 @@
   "name": "Finops",
   "client": "Custom",
   "phase": "KT Sessions",
-  "githubKeyword": "",
+  "githubKeyword": "UAT",
   "enabledSources": [
     "github"
   ],
   "createdAt": "2026-03-09T03:49:07.205Z",
-  "savedAt": "2026-03-09T03:49:57.595Z",
+  "savedAt": "2026-03-12T23:26:50.308Z",
   "_folderName": "finops"
 }

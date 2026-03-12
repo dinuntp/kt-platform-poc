@@ -2,13 +2,139 @@
   "sectionId": "biz_context",
   "projectId": "mmnnbubn4r42nfdjo0y",
   "projectName": "Cigna",
-  "savedAt": "2026-03-12T15:52:07.294Z",
-  "items": [],
-  "links": [],
+  "savedAt": "2026-03-12T23:27:12.176Z",
+  "items": [
+    {
+      "item": "Business objective & problem statement",
+      "status": "In Progress",
+      "notes": "Business Context- test",
+      "link": "Business Context",
+      "docStatus": "Draft",
+      "lineOfBusiness": [
+        "Insurance",
+        "Operations"
+      ],
+      "capability": [
+        "Analytics & Reporting",
+        "Data Engineering"
+      ],
+      "priority": "Critical"
+    },
+    {
+      "item": "Data consumers & downstream stakeholders",
+      "status": "In Progress",
+      "notes": "",
+      "link": "",
+      "docStatus": "Draft",
+      "lineOfBusiness": [
+        "Insurance"
+      ],
+      "capability": [
+        "Operations",
+        "Product"
+      ],
+      "priority": "Medium"
+    },
+    {
+      "item": "SLA commitments & business impact of failure",
+      "status": "In Progress",
+      "notes": "Business Context",
+      "link": "Business Context",
+      "docStatus": "Draft",
+      "lineOfBusiness": [
+        "Operations",
+        "Finance"
+      ],
+      "capability": [
+        "Analytics & Reporting",
+        "Data Engineering"
+      ],
+      "priority": "Medium"
+    },
+    {
+      "item": "Key business decisions this data powers",
+      "status": "In Progress",
+      "notes": "Business Context",
+      "link": "Business Context",
+      "docStatus": "Draft",
+      "lineOfBusiness": [
+        "Insurance",
+        "Wealth Management"
+      ],
+      "capability": [
+        "Analytics & Reporting",
+        "Data Engineering"
+      ],
+      "priority": "Medium"
+    },
+    {
+      "item": "Historical context & major decisions made",
+      "status": "In Progress",
+      "notes": "Business Context",
+      "link": "Business Context",
+      "docStatus": "Draft",
+      "lineOfBusiness": [
+        "Risk",
+        "Compliance",
+        "Technology"
+      ],
+      "capability": [
+        "Data Engineering",
+        "Product",
+        "Risk & Compliance"
+      ],
+      "priority": "Critical"
+    },
+    {
+      "item": "Success metrics & KPIs tracked",
+      "status": "In Progress",
+      "notes": "Business Context",
+      "link": "Business Context",
+      "docStatus": "Draft",
+      "lineOfBusiness": [
+        "Corporate Banking",
+        "Investment Banking",
+        "HR",
+        "Marketing"
+      ],
+      "capability": [
+        "Risk & Compliance",
+        "Other"
+      ],
+      "priority": "Medium"
+    }
+  ],
+  "links": [
+    {
+      "item": "Business objective & problem statement",
+      "url": "Business Context",
+      "notes": "Business Context- test"
+    },
+    {
+      "item": "SLA commitments & business impact of failure",
+      "url": "Business Context",
+      "notes": "Business Context"
+    },
+    {
+      "item": "Key business decisions this data powers",
+      "url": "Business Context",
+      "notes": "Business Context"
+    },
+    {
+      "item": "Historical context & major decisions made",
+      "url": "Business Context",
+      "notes": "Business Context"
+    },
+    {
+      "item": "Success metrics & KPIs tracked",
+      "url": "Business Context",
+      "notes": "Business Context"
+    }
+  ],
   "summary": {
-    "total": 0,
+    "total": 6,
     "done": 0,
-    "inProgress": 0,
+    "inProgress": 6,
     "blocked": 0,
     "notStarted": 0
   }

@@ -2,14 +2,69 @@
   "sectionId": "data_quality",
   "projectId": "mmnnbubn4r42nfdjo0y",
   "projectName": "Cigna",
-  "savedAt": "2026-03-12T15:52:07.307Z",
-  "items": [],
+  "savedAt": "2026-03-12T23:27:12.202Z",
+  "items": [
+    {
+      "item": "Data quality rules & validation logic",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "framework": [],
+      "slaType": "None defined"
+    },
+    {
+      "item": "Quality monitoring & alerting setup",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "framework": [],
+      "slaType": "None defined"
+    },
+    {
+      "item": "SLA definitions & breach process",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "framework": [],
+      "slaType": "None defined"
+    },
+    {
+      "item": "Known recurring data anomalies & workarounds",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "framework": [],
+      "slaType": "None defined"
+    },
+    {
+      "item": "Data reconciliation processes",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "framework": [],
+      "slaType": "None defined"
+    },
+    {
+      "item": "Quality dashboard / reporting links",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "framework": [],
+      "slaType": "None defined"
+    }
+  ],
   "links": [],
   "summary": {
-    "total": 0,
+    "total": 6,
     "done": 0,
     "inProgress": 0,
     "blocked": 0,
-    "notStarted": 0
+    "notStarted": 6
   }
 }

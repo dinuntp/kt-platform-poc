@@ -1,7 +1,7 @@
 # Node modules
 node_modules/
 
-# Logs
+# Logs - Additional log files can be added as needed
 logs
 *.log
 npm-debug.log*

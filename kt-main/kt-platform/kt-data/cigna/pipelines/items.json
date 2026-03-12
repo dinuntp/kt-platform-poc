@@ -2,13 +2,117 @@
   "sectionId": "pipelines",
   "projectId": "mmnnbubn4r42nfdjo0y",
   "projectName": "Cigna",
-  "savedAt": "2026-03-12T15:52:07.298Z",
-  "items": [],
-  "links": [],
+  "savedAt": "2026-03-12T23:27:12.187Z",
+  "items": [
+    {
+      "item": "Complete pipeline/DAG inventory list",
+      "status": "In Progress",
+      "notes": "\nPipeline Inventory\nAll pipelines, schedules, dependencies, failure behaviour.",
+      "link": " Pipeline Inventory All pipelines, schedules, dependencies, failure behaviour.",
+      "docStatus": "Draft",
+      "type": [
+        "Streaming",
+        "Micro-batch"
+      ],
+      "frequency": "Real-time"
+    },
+    {
+      "item": "Pipeline dependency map & execution order",
+      "status": "In Progress",
+      "notes": "\nPipeline Inventory\nAll pipelines, schedules, dependencies, failure behaviour.",
+      "link": " Pipeline Inventory All pipelines, schedules, dependencies, failure behaviour.",
+      "docStatus": "Draft",
+      "type": [
+        "Streaming",
+        "Micro-batch"
+      ],
+      "frequency": "Hourly"
+    },
+    {
+      "item": "Schedule & trigger documentation",
+      "status": "In Progress",
+      "notes": "\nPipeline Inventory\nAll pipelines, schedules, dependencies, failure behaviour.",
+      "link": " Pipeline Inventory All pipelines, schedules, dependencies, failure behaviour.",
+      "docStatus": "Draft",
+      "type": [
+        "Streaming",
+        "Micro-batch"
+      ],
+      "frequency": "Daily"
+    },
+    {
+      "item": "Expected runtime & SLA thresholds",
+      "status": "In Progress",
+      "notes": "\nPipeline Inventory\nAll pipelines, schedules, dependencies, failure behaviour.",
+      "link": " Pipeline Inventory All pipelines, schedules, dependencies, failure behaviour.",
+      "docStatus": "Draft",
+      "type": [
+        "API Pull",
+        "dbt Model"
+      ],
+      "frequency": "Every 4h"
+    },
+    {
+      "item": "Failure modes & retry / alerting logic",
+      "status": "In Progress",
+      "notes": "\nPipeline Inventory\nAll pipelines, schedules, dependencies, failure behaviour.",
+      "link": " Pipeline Inventory All pipelines, schedules, dependencies, failure behaviour.",
+      "docStatus": "Draft",
+      "type": [
+        "Batch",
+        "API Pull"
+      ],
+      "frequency": "Weekly"
+    },
+    {
+      "item": "Data volume & growth trends",
+      "status": "In Progress",
+      "notes": "\nPipeline Inventory\nAll pipelines, schedules, dependencies, failure behaviour.",
+      "link": " Pipeline Inventory All pipelines, schedules, dependencies, failure behaviour.",
+      "docStatus": "Draft",
+      "type": [
+        "Micro-batch",
+        "API Pull"
+      ],
+      "frequency": "Manual"
+    }
+  ],
+  "links": [
+    {
+      "item": "Complete pipeline/DAG inventory list",
+      "url": " Pipeline Inventory All pipelines, schedules, dependencies, failure behaviour.",
+      "notes": "\nPipeline Inventory\nAll pipelines, schedules, dependencies, failure behaviour."
+    },
+    {
+      "item": "Pipeline dependency map & execution order",
+      "url": " Pipeline Inventory All pipelines, schedules, dependencies, failure behaviour.",
+      "notes": "\nPipeline Inventory\nAll pipelines, schedules, dependencies, failure behaviour."
+    },
+    {
+      "item": "Schedule & trigger documentation",
+      "url": " Pipeline Inventory All pipelines, schedules, dependencies, failure behaviour.",
+      "notes": "\nPipeline Inventory\nAll pipelines, schedules, dependencies, failure behaviour."
+    },
+    {
+      "item": "Expected runtime & SLA thresholds",
+      "url": " Pipeline Inventory All pipelines, schedules, dependencies, failure behaviour.",
+      "notes": "\nPipeline Inventory\nAll pipelines, schedules, dependencies, failure behaviour."
+    },
+    {
+      "item": "Failure modes & retry / alerting logic",
+      "url": " Pipeline Inventory All pipelines, schedules, dependencies, failure behaviour.",
+      "notes": "\nPipeline Inventory\nAll pipelines, schedules, dependencies, failure behaviour."
+    },
+    {
+      "item": "Data volume & growth trends",
+      "url": " Pipeline Inventory All pipelines, schedules, dependencies, failure behaviour.",
+      "notes": "\nPipeline Inventory\nAll pipelines, schedules, dependencies, failure behaviour."
+    }
+  ],
   "summary": {
-    "total": 0,
+    "total": 6,
     "done": 0,
-    "inProgress": 0,
+    "inProgress": 6,
     "blocked": 0,
     "notStarted": 0
   }

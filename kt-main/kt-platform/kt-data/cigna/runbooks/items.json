@@ -1,62 +1,62 @@
 {
-  "sectionId": "known_issues",
+  "sectionId": "runbooks",
   "projectId": "mmnnbubn4r42nfdjo0y",
   "projectName": "Cigna",
-  "savedAt": "2026-03-12T23:27:12.211Z",
+  "savedAt": "2026-03-12T23:27:12.207Z",
   "items": [
     {
-      "item": "Open bug inventory with severity",
+      "item": "Pipeline failure triage & resolution",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "issueType": [],
-      "severity": "Critical"
+      "runbookType": [],
+      "complexity": "Simple (< 5 steps)"
     },
     {
-      "item": "Tech debt register & priority",
+      "item": "Data backfill process",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "issueType": [],
-      "severity": "Critical"
+      "runbookType": [],
+      "complexity": "Simple (< 5 steps)"
     },
     {
-      "item": "Active workarounds & their risks",
+      "item": "Incident response playbook",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "issueType": [],
-      "severity": "Critical"
+      "runbookType": [],
+      "complexity": "Simple (< 5 steps)"
     },
     {
-      "item": "Performance bottlenecks & limits",
+      "item": "On-call rotation & escalation path",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "issueType": [],
-      "severity": "Critical"
+      "runbookType": [],
+      "complexity": "Simple (< 5 steps)"
     },
     {
-      "item": "Security vulnerabilities & mitigations",
+      "item": "Common operational tasks (restart, rerun)",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "issueType": [],
-      "severity": "Critical"
+      "runbookType": [],
+      "complexity": "Simple (< 5 steps)"
     },
     {
-      "item": "Deprecated components still in use",
+      "item": "Monitoring dashboards & how to read them",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "issueType": [],
-      "severity": "Critical"
+      "runbookType": [],
+      "complexity": "Simple (< 5 steps)"
     }
   ],
   "links": [],

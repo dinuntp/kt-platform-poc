@@ -2,14 +2,69 @@
   "sectionId": "contacts",
   "projectId": "mmnnbubn4r42nfdjo0y",
   "projectName": "Cigna",
-  "savedAt": "2026-03-12T15:52:07.315Z",
-  "items": [],
+  "savedAt": "2026-03-12T23:27:12.213Z",
+  "items": [
+    {
+      "item": "Data / pipeline owner contacts",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "role": [],
+      "team": []
+    },
+    {
+      "item": "Upstream source system owners",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "role": [],
+      "team": []
+    },
+    {
+      "item": "Downstream consumer contacts",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "role": [],
+      "team": []
+    },
+    {
+      "item": "On-call engineer & escalation chain",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "role": [],
+      "team": []
+    },
+    {
+      "item": "Business stakeholder contacts",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "role": [],
+      "team": []
+    },
+    {
+      "item": "Vendor / third-party contacts",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "role": [],
+      "team": []
+    }
+  ],
   "links": [],
   "summary": {
-    "total": 0,
+    "total": 6,
     "done": 0,
     "inProgress": 0,
     "blocked": 0,
-    "notStarted": 0
+    "notStarted": 6
   }
 }

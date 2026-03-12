@@ -77,9 +77,14 @@ function NewProjectModal({ onClose }) {
         alert('Failed to save project: ' + (result.error || 'Unknown error'));
         return;
       }
-      
+
+      // Capture _folderName returned by server so auto-save can reuse it
+      const savedProject = result && result.folderName
+        ? { ...project, _folderName: result.folderName }
+        : project;
+
       // Add to local state only after successful backend save
-      actions.addProject(project);
+      actions.addProject(savedProject);
       onClose();
     } catch (e) {
       alert('Error creating project: ' + e.message);

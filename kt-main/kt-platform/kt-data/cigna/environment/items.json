@@ -1,17 +1,23 @@
 {
   "sectionId": "environment",
-  "projectId": "mmin6i2t6b7st805m7q",
-  "projectName": "Finops",
-  "savedAt": "2026-03-12T23:26:50.319Z",
+  "projectId": "mmnnbubn4r42nfdjo0y",
+  "projectName": "Cigna",
+  "savedAt": "2026-03-12T23:27:12.195Z",
   "items": [
     {
       "item": "Environment overview (dev / staging / prod)",
-      "status": "Not Started",
-      "notes": "",
-      "link": "",
-      "docStatus": "—",
-      "env": "Development",
-      "cloud": "AWS"
+      "status": "In Progress",
+      "notes": "Environment",
+      "link": "Environment",
+      "docStatus": "Access Pending",
+      "env": [
+        "Staging",
+        "UAT"
+      ],
+      "cloud": [
+        "On-premise",
+        "AWS"
+      ]
     },
     {
       "item": "Connection strings & endpoint documentation",
@@ -19,8 +25,8 @@
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "env": "Development",
-      "cloud": "AWS"
+      "env": [],
+      "cloud": []
     },
     {
       "item": "Secrets & credentials management process",
@@ -28,8 +34,8 @@
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "env": "Development",
-      "cloud": "AWS"
+      "env": [],
+      "cloud": []
     },
     {
       "item": "Tool versions & compatibility matrix",
@@ -37,8 +43,8 @@
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "env": "Development",
-      "cloud": "AWS"
+      "env": [],
+      "cloud": []
     },
     {
       "item": "Access provisioning guide for new team",
@@ -46,8 +52,8 @@
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "env": "Development",
-      "cloud": "AWS"
+      "env": [],
+      "cloud": []
     },
     {
       "item": "VPN / network access requirements",
@@ -55,16 +61,22 @@
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "env": "Development",
-      "cloud": "AWS"
+      "env": [],
+      "cloud": []
     }
   ],
-  "links": [],
+  "links": [
+    {
+      "item": "Environment overview (dev / staging / prod)",
+      "url": "Environment",
+      "notes": "Environment"
+    }
+  ],
   "summary": {
     "total": 6,
     "done": 0,
-    "inProgress": 0,
+    "inProgress": 1,
     "blocked": 0,
-    "notStarted": 6
+    "notStarted": 5
   }
 }

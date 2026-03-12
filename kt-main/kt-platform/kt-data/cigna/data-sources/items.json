@@ -2,13 +2,135 @@
   "sectionId": "data_sources",
   "projectId": "mmnnbubn4r42nfdjo0y",
   "projectName": "Cigna",
-  "savedAt": "2026-03-12T15:52:07.301Z",
-  "items": [],
-  "links": [],
+  "savedAt": "2026-03-12T23:27:12.191Z",
+  "items": [
+    {
+      "item": "Source system inventory with owners",
+      "status": "In Progress",
+      "notes": "\nPipeline Inventory\nAll pipelines, schedules, dependencies, failure behaviour.",
+      "link": " Pipeline Inventory All pipelines, schedules, dependencies, failure behaviour.",
+      "docStatus": "Draft",
+      "sourceType": [
+        "Operational DB",
+        "REST API"
+      ],
+      "access": [
+        "Service Account",
+        "API Key"
+      ]
+    },
+    {
+      "item": "Ingestion method per source",
+      "status": "In Progress",
+      "notes": "Data Sources\n",
+      "link": "Data Sources",
+      "docStatus": "Draft",
+      "sourceType": [
+        "Data Warehouse",
+        "FTP/SFTP"
+      ],
+      "access": [
+        "API Key",
+        "Service Account"
+      ]
+    },
+    {
+      "item": "Refresh cadence & latency expectations",
+      "status": "In Progress",
+      "notes": "Data Sources",
+      "link": "Data Sources",
+      "docStatus": "Draft",
+      "sourceType": [
+        "Operational DB",
+        "Data Warehouse"
+      ],
+      "access": [
+        "Direct Connection",
+        "Service Account"
+      ]
+    },
+    {
+      "item": "Schema documentation per source",
+      "status": "In Progress",
+      "notes": "Data Sources",
+      "link": "Data Sources",
+      "docStatus": "Draft",
+      "sourceType": [
+        "Operational DB",
+        "GraphQL API"
+      ],
+      "access": [
+        "IP Whitelist",
+        "Read Replica"
+      ]
+    },
+    {
+      "item": "Source system contacts & escalation",
+      "status": "In Progress",
+      "notes": "Data Sources\n",
+      "link": "Data Sources",
+      "docStatus": "Draft",
+      "sourceType": [
+        "Data Warehouse",
+        "REST API"
+      ],
+      "access": [
+        "OAuth",
+        "API Key"
+      ]
+    },
+    {
+      "item": "Known data quality issues per source",
+      "status": "In Progress",
+      "notes": "Data Sources",
+      "link": "Data Sources",
+      "docStatus": "Draft",
+      "sourceType": [
+        "Data Warehouse",
+        "REST API"
+      ],
+      "access": [
+        "IP Whitelist",
+        "Read Replica"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "item": "Source system inventory with owners",
+      "url": " Pipeline Inventory All pipelines, schedules, dependencies, failure behaviour.",
+      "notes": "\nPipeline Inventory\nAll pipelines, schedules, dependencies, failure behaviour."
+    },
+    {
+      "item": "Ingestion method per source",
+      "url": "Data Sources",
+      "notes": "Data Sources\n"
+    },
+    {
+      "item": "Refresh cadence & latency expectations",
+      "url": "Data Sources",
+      "notes": "Data Sources"
+    },
+    {
+      "item": "Schema documentation per source",
+      "url": "Data Sources",
+      "notes": "Data Sources"
+    },
+    {
+      "item": "Source system contacts & escalation",
+      "url": "Data Sources",
+      "notes": "Data Sources\n"
+    },
+    {
+      "item": "Known data quality issues per source",
+      "url": "Data Sources",
+      "notes": "Data Sources"
+    }
+  ],
   "summary": {
-    "total": 0,
+    "total": 6,
     "done": 0,
-    "inProgress": 0,
+    "inProgress": 6,
     "blocked": 0,
     "notStarted": 0
   }
