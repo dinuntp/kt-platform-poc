@@ -5,9 +5,9 @@
 import "dotenv/config";
 import express   from "express";
 import cors      from "cors";
-// COMMENTED OUT: Anthropic SDK - corporate network restriction
+// TODO: Uncomment when ANTHROPIC_API_KEY is ready
 // import Anthropic from "@anthropic-ai/sdk";
-import { PROMPTS }    from "./prompts/index.js";
+import { PROMPTS as _PROMPTS }    from "./prompts/index.js"; // TODO: rename back to PROMPTS when API key ready
 import { CONNECTORS } from "./connectors/index.js";
 import fs   from "fs";
 import path from "path";
@@ -211,7 +211,7 @@ function loadProjectContext(folderName) {
 }
 
 const app       = express();
-// COMMENTED OUT: Anthropic SDK initialization - corporate network restriction
+// TODO: Uncomment when ANTHROPIC_API_KEY is ready
 // const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 const PORT      = process.env.PORT || 3001;
 
@@ -265,9 +265,7 @@ app.get("/api/status", (req, res) => {
   res.json({
     status: "ok",
     client: process.env.CLIENT_NAME || "Unknown",
-    // COMMENTED OUT: Anthropic SDK status check
-    // claude: { configured: !!process.env.ANTHROPIC_API_KEY },
-    claude: { configured: false, reason: "SDK temporarily disabled due to corporate network restrictions" },
+    claude: { configured: !!process.env.ANTHROPIC_API_KEY },
   });
 });
 
@@ -370,7 +368,7 @@ app.post("/api/agent/populate", async (req, res) => {
   const {
     projectKeyword,
     sections,
-    promptTemplate,
+    promptTemplate: _promptTemplate, // used in Claude block — TODO: rename back when API key ready
     enabledSources = ["github"],
   } = req.body;
 
@@ -428,33 +426,28 @@ app.post("/api/agent/populate", async (req, res) => {
       send("log", { message: `🤖 Drafting [${targetSections.join(", ")}] from ${connector.meta.label}…` });
 
       try {
-        const prompt = PROMPTS.buildPopulate({
-          source: sourceId,
-          promptTemplate,
-          sourceData,
-          sectionsToPopulate: targetSections,
-          sectionLabels: PROMPTS.sectionLabels,
-        });
-
-        // COMMENTED OUT: Anthropic API call - corporate network restriction
+        // TODO: Uncomment all of this block when ANTHROPIC_API_KEY is ready
+        // const prompt = PROMPTS.buildPopulate({
+        //   source: sourceId,
+        //   promptTemplate,
+        //   sourceData,
+        //   sectionsToPopulate: targetSections,
+        //   sectionLabels: PROMPTS.sectionLabels,
+        // });
         // const response = await anthropic.messages.create({
-        //   model:      "claude-sonnet-4-20250514",
+        //   model:      "claude-sonnet-4-5",
         //   max_tokens: 2000,
         //   system:     PROMPTS.getSystem(sourceId),
         //   messages:   [{ role: "user", content: prompt }],
         // });
-        //
         // const raw    = response.content[0].text.trim();
         // const clean  = raw.replace(/```json[\s\S]*?```|```/g, "").trim();
         // const result = JSON.parse(clean);
-        
-        // Mock response while Anthropic is disabled
+
+        // Mock response — replace with real API call above when key is ready
         const result = {
           drafts: targetSections.reduce((acc, sec) => {
-            acc[sec] = {
-              content: `[Mock] No KT content available - Anthropic SDK temporarily disabled. Please try again when network connectivity is restored.`,
-              verify: [],
-            };
+            acc[sec] = { content: `[Mock] Anthropic API not yet configured. Add ANTHROPIC_API_KEY to .env to enable AI drafts.`, verify: [] };
             return acc;
           }, {}),
           confidence: "low - mocked response",
@@ -493,7 +486,7 @@ app.post("/api/agent/populate", async (req, res) => {
 // ─── AGENT: ASK ───────────────────────────────────────────────────────────
 
 app.post("/api/agent/ask", async (req, res) => {
-  const { question, projectKeyword, projectFolderName, ktContext, conversationHistory, enabledSources = ["github"] } = req.body;
+  const { question, projectKeyword, projectFolderName, ktContext, conversationHistory: _conversationHistory, enabledSources = ["github"] } = req.body;
   if (!question) return res.status(400).json({ error: "question required" });
   const safeSources = sanitiseSources(enabledSources);
   const safeFolder  = projectFolderName ? safeFolderName(projectFolderName) : null;
@@ -503,7 +496,7 @@ app.post("/api/agent/ask", async (req, res) => {
     const activeSources = [];
 
     // Load full KT context from disk if project has been saved
-    let richKtContext = ktContext || "";
+    let _richKtContext = ktContext || "";
     if (safeFolder) {
       const diskContext = loadProjectContext(safeFolder);
       if (diskContext) {
@@ -528,7 +521,7 @@ app.post("/api/agent/ask", async (req, res) => {
           return lines.join("\n");
         }).filter(Boolean);
 
-        if (sections.length) richKtContext = sections.join("\n\n");
+        if (sections.length) _richKtContext = sections.join("\n\n");
         activeSources.push("KT Docs (disk)");
       }
     } else if (ktContext) {
@@ -547,25 +540,22 @@ app.post("/api/agent/ask", async (req, res) => {
       } catch { /* skip failed sources quietly */ }
     }
 
-    const { system, userMessage } = PROMPTS.buildAsk({
-      contextParts,
-      ktContext: richKtContext,
-      question,
-    });
-
-    // COMMENTED OUT: Anthropic API call - corporate network restriction
+    // TODO: Uncomment all of this block when ANTHROPIC_API_KEY is ready
+    // const { system, userMessage } = PROMPTS.buildAsk({
+    //   contextParts,
+    //   ktContext: richKtContext,
+    //   question,
+    // });
     // const response = await anthropic.messages.create({
-    //   model:      "claude-sonnet-4-20250514",
+    //   model:      "claude-sonnet-4-5",
     //   max_tokens: 1000,
     //   system,
     //   messages:   [...(conversationHistory||[]), { role:"user", content: userMessage }],
     // });
-    //
     // res.json({ answer: response.content[0].text, sources: activeSources.length ? activeSources : ["General Knowledge"] });
-    
-    // Mock response while Anthropic is disabled
-    const mockAnswer = "[Unable to respond] The Claude AI backend is temporarily unavailable due to network connectivity issues. The Anthropic SDK has been disabled. Please restore network access to the Anthropic API or contact your administrator.";
-    res.json({ answer: mockAnswer, sources: activeSources.length ? activeSources : ["General Knowledge"] });
+
+    // Mock response — replace with real API call above when key is ready
+    res.json({ answer: "[Mock] Anthropic API not yet configured. Add ANTHROPIC_API_KEY to .env to enable Ask Agent.", sources: activeSources.length ? activeSources : ["General Knowledge"] });
 
   } catch (err) {
     res.status(500).json({ error: err.message });
@@ -579,12 +569,11 @@ const configuredSources = Object.entries(CONNECTORS)
   .map(([,c]) => `${c.meta.icon} ${c.meta.label}`);
 
 app.listen(PORT, () => {
-  //Dinesh: COMMENTED OUT: Original log message before front end proxy setup
+  // COMMENTED OUT: Original log message before front end proxy setup
   //console.log(`\n🚀 KT Platform Backend running on http://localhost:${PORT}`);
   console.log(`\n🚀 KT Platform running on http://localhost:${PORT}`);
   console.log(`   Client:  ${process.env.CLIENT_NAME || "Not set"}`);
-  // COMMENTED OUT: Anthropic SDK status check
-  console.log(`   Claude:  ✗ DISABLED (corporate network restriction - Anthropic SDK commented out)`);
+  console.log(`   Claude:  ${process.env.ANTHROPIC_API_KEY ? "✓ API key configured" : "✗ ANTHROPIC_API_KEY not set in .env"}`);
   console.log(`   Sources: ${configuredSources.length ? configuredSources.join("  ") : "none configured — add keys to .env"}`);
   //Dinesh: COMMENTED OUT: Original log message before front end proxy setup
   //console.log(`\n   Frontend: Open http://localhost:5173 (or 5174) in your browser.\n`);

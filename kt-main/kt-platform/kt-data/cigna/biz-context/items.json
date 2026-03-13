@@ -2,21 +2,25 @@
   "sectionId": "biz_context",
   "projectId": "mmnnbubn4r42nfdjo0y",
   "projectName": "Cigna",
-  "savedAt": "2026-03-12T23:27:12.176Z",
+  "savedAt": "2026-03-13T22:45:52.957Z",
   "items": [
     {
       "item": "Business objective & problem statement",
       "status": "In Progress",
-      "notes": "Business Context- test",
-      "link": "Business Context",
+      "notes": "Business Context - test",
+      "link": "https://localhost:3001, https://localhost:5212",
       "docStatus": "Draft",
       "lineOfBusiness": [
         "Insurance",
-        "Operations"
+        "Operations",
+        "Investment Banking",
+        "Corporate Banking",
+        "Retail Banking"
       ],
       "capability": [
         "Analytics & Reporting",
-        "Data Engineering"
+        "Data Engineering",
+        "ML/AI"
       ],
       "priority": "Critical"
     },
@@ -107,8 +111,8 @@
   "links": [
     {
       "item": "Business objective & problem statement",
-      "url": "Business Context",
-      "notes": "Business Context- test"
+      "url": "https://localhost:3001, https://localhost:5212",
+      "notes": "Business Context - test"
     },
     {
       "item": "SLA commitments & business impact of failure",

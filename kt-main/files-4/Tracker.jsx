@@ -123,15 +123,20 @@ function TrackerCenter({ proj, data }) {
 
   function acceptDraft() {
     if (data.checklist[sec.id]) {
+      // Build the note from the agent's actual content + verify checklist
+      const draftNote = [
+        draft.content,
+        draft.verify?.length ? `\nTo verify:\n${draft.verify.map(v => `• ${v}`).join('\n')}` : '',
+      ].filter(Boolean).join('');
+
       const updated = data.checklist[sec.id].map(item => ({
         ...item,
-        notes: item.notes || '(Agent draft accepted — verify details)',
+        notes: item.notes || draftNote,
         status: item.status === 'Not Started' ? 'In Progress' : item.status,
       }));
       actions.updateProjectData(proj.id, {
         ...data,
         checklist: { ...data.checklist, [sec.id]: updated },
-        agentDrafts: { ...data.agentDrafts, [sec.id]: undefined },
       });
     }
     actions.dismissDraft(proj.id, sec.id);

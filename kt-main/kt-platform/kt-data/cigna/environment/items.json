@@ -2,7 +2,7 @@
   "sectionId": "environment",
   "projectId": "mmnnbubn4r42nfdjo0y",
   "projectName": "Cigna",
-  "savedAt": "2026-03-12T23:27:12.195Z",
+  "savedAt": "2026-03-13T22:45:52.989Z",
   "items": [
     {
       "item": "Environment overview (dev / staging / prod)",
@@ -21,48 +21,68 @@
     },
     {
       "item": "Connection strings & endpoint documentation",
-      "status": "Not Started",
-      "notes": "",
-      "link": "",
-      "docStatus": "—",
-      "env": [],
-      "cloud": []
+      "status": "In Progress",
+      "notes": "Dinesh test",
+      "link": "Dinesh test",
+      "docStatus": "Access Pending",
+      "env": [
+        "Development"
+      ],
+      "cloud": [
+        "AWS"
+      ]
     },
     {
       "item": "Secrets & credentials management process",
-      "status": "Not Started",
-      "notes": "",
+      "status": "In Progress",
+      "notes": "Dinesh Test",
       "link": "",
-      "docStatus": "—",
-      "env": [],
-      "cloud": []
+      "docStatus": "Access Granted",
+      "env": [
+        "Staging"
+      ],
+      "cloud": [
+        "GCP"
+      ]
     },
     {
       "item": "Tool versions & compatibility matrix",
-      "status": "Not Started",
-      "notes": "",
+      "status": "In Progress",
+      "notes": "Dinesh Test",
       "link": "",
-      "docStatus": "—",
-      "env": [],
-      "cloud": []
+      "docStatus": "Access Pending",
+      "env": [
+        "Staging"
+      ],
+      "cloud": [
+        "GCP"
+      ]
     },
     {
       "item": "Access provisioning guide for new team",
-      "status": "Not Started",
-      "notes": "",
+      "status": "In Progress",
+      "notes": "test",
       "link": "",
       "docStatus": "—",
-      "env": [],
-      "cloud": []
+      "env": [
+        "Development"
+      ],
+      "cloud": [
+        "AWS"
+      ]
     },
     {
       "item": "VPN / network access requirements",
-      "status": "Not Started",
-      "notes": "",
-      "link": "",
+      "status": "In Progress",
+      "notes": "Test",
+      "link": "Test",
       "docStatus": "—",
-      "env": [],
-      "cloud": []
+      "env": [
+        "UAT"
+      ],
+      "cloud": [
+        "GCP"
+      ]
     }
   ],
   "links": [
@@ -70,13 +90,23 @@
       "item": "Environment overview (dev / staging / prod)",
       "url": "Environment",
       "notes": "Environment"
+    },
+    {
+      "item": "Connection strings & endpoint documentation",
+      "url": "Dinesh test",
+      "notes": "Dinesh test"
+    },
+    {
+      "item": "VPN / network access requirements",
+      "url": "Test",
+      "notes": "Test"
     }
   ],
   "summary": {
     "total": 6,
     "done": 0,
-    "inProgress": 1,
+    "inProgress": 6,
     "blocked": 0,
-    "notStarted": 5
+    "notStarted": 0
   }
 }

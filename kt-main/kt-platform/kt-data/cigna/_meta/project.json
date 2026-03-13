@@ -5,9 +5,10 @@
   "phase": "Sign-off",
   "githubKeyword": "Cigna",
   "enabledSources": [
+    "confluence",
     "github"
   ],
   "createdAt": "2026-03-12T15:52:07.235Z",
-  "savedAt": "2026-03-12T23:27:12.166Z",
+  "savedAt": "2026-03-13T22:45:52.940Z",
   "_folderName": "cigna"
 }
