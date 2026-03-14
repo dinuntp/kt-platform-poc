@@ -1,62 +1,62 @@
 {
-  "sectionId": "data_quality",
-  "projectId": "mmnnbubn4r42nfdjo0y",
-  "projectName": "Cigna",
-  "savedAt": "2026-03-14T01:46:14.310Z",
+  "sectionId": "data_context",
+  "projectId": "mmpo0s7mdpzkbk7zmfv",
+  "projectName": "kt-platform",
+  "savedAt": "2026-03-14T03:20:03.116Z",
   "items": [
     {
-      "item": "Data quality rules & validation logic",
+      "item": "Domain glossary & business definitions",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "domain": [],
+      "sensitivity": []
     },
     {
-      "item": "Quality monitoring & alerting setup",
+      "item": "Core entity definitions (customer, order, event…)",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "domain": [],
+      "sensitivity": []
     },
     {
-      "item": "SLA definitions & breach process",
+      "item": "Data lineage narrative (source → transform → output)",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "domain": [],
+      "sensitivity": []
     },
     {
-      "item": "Known recurring data anomalies & workarounds",
+      "item": "Data ownership & stewardship model",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "domain": [],
+      "sensitivity": []
     },
     {
-      "item": "Data reconciliation processes",
+      "item": "Sensitive / PII data inventory",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "domain": [],
+      "sensitivity": []
     },
     {
-      "item": "Quality dashboard / reporting links",
+      "item": "Data retention & archival policies",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "domain": [],
+      "sensitivity": []
     }
   ],
   "links": [],

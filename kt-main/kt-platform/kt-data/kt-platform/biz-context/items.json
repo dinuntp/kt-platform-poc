@@ -1,0 +1,76 @@
+{
+  "sectionId": "biz_context",
+  "projectId": "mmpo0s7mdpzkbk7zmfv",
+  "projectName": "kt-platform",
+  "savedAt": "2026-03-14T03:20:03.104Z",
+  "items": [
+    {
+      "item": "Business objective & problem statement",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "lineOfBusiness": [],
+      "capability": [],
+      "priority": "Critical"
+    },
+    {
+      "item": "Data consumers & downstream stakeholders",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "lineOfBusiness": [],
+      "capability": [],
+      "priority": "Critical"
+    },
+    {
+      "item": "SLA commitments & business impact of failure",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "lineOfBusiness": [],
+      "capability": [],
+      "priority": "Critical"
+    },
+    {
+      "item": "Key business decisions this data powers",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "lineOfBusiness": [],
+      "capability": [],
+      "priority": "Critical"
+    },
+    {
+      "item": "Historical context & major decisions made",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "lineOfBusiness": [],
+      "capability": [],
+      "priority": "Critical"
+    },
+    {
+      "item": "Success metrics & KPIs tracked",
+      "status": "Not Started",
+      "notes": "",
+      "link": "",
+      "docStatus": "—",
+      "lineOfBusiness": [],
+      "capability": [],
+      "priority": "Critical"
+    }
+  ],
+  "links": [],
+  "summary": {
+    "total": 6,
+    "done": 0,
+    "inProgress": 0,
+    "blocked": 0,
+    "notStarted": 6
+  }
+}

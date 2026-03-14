@@ -1,62 +1,62 @@
 {
-  "sectionId": "data_quality",
-  "projectId": "mmnnbubn4r42nfdjo0y",
-  "projectName": "Cigna",
-  "savedAt": "2026-03-14T01:46:14.310Z",
+  "sectionId": "pipelines",
+  "projectId": "mmpo0s7mdpzkbk7zmfv",
+  "projectName": "kt-platform",
+  "savedAt": "2026-03-14T03:20:03.125Z",
   "items": [
     {
-      "item": "Data quality rules & validation logic",
+      "item": "Complete pipeline/DAG inventory list",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "type": [],
+      "frequency": "Real-time"
     },
     {
-      "item": "Quality monitoring & alerting setup",
+      "item": "Pipeline dependency map & execution order",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "type": [],
+      "frequency": "Real-time"
     },
     {
-      "item": "SLA definitions & breach process",
+      "item": "Schedule & trigger documentation",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "type": [],
+      "frequency": "Real-time"
     },
     {
-      "item": "Known recurring data anomalies & workarounds",
+      "item": "Expected runtime & SLA thresholds",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "type": [],
+      "frequency": "Real-time"
     },
     {
-      "item": "Data reconciliation processes",
+      "item": "Failure modes & retry / alerting logic",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "type": [],
+      "frequency": "Real-time"
     },
     {
-      "item": "Quality dashboard / reporting links",
+      "item": "Data volume & growth trends",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "type": [],
+      "frequency": "Real-time"
     }
   ],
   "links": [],

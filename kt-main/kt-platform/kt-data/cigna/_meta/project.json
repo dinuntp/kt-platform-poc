@@ -3,12 +3,11 @@
   "name": "Cigna",
   "client": "HealthData Inc",
   "phase": "Sign-off",
-  "githubKeyword": "Cigna",
+  "githubKeyword": "kt-platform-poc",
   "enabledSources": [
-    "confluence",
     "github"
   ],
   "createdAt": "2026-03-12T15:52:07.235Z",
-  "savedAt": "2026-03-13T22:45:52.940Z",
+  "savedAt": "2026-03-14T01:46:14.273Z",
   "_folderName": "cigna"
 }

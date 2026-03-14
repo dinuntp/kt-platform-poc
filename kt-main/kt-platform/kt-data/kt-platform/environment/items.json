@@ -1,62 +1,62 @@
 {
-  "sectionId": "data_quality",
-  "projectId": "mmnnbubn4r42nfdjo0y",
-  "projectName": "Cigna",
-  "savedAt": "2026-03-14T01:46:14.310Z",
+  "sectionId": "environment",
+  "projectId": "mmpo0s7mdpzkbk7zmfv",
+  "projectName": "kt-platform",
+  "savedAt": "2026-03-14T03:20:03.134Z",
   "items": [
     {
-      "item": "Data quality rules & validation logic",
+      "item": "Environment overview (dev / staging / prod)",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "env": [],
+      "cloud": []
     },
     {
-      "item": "Quality monitoring & alerting setup",
+      "item": "Connection strings & endpoint documentation",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "env": [],
+      "cloud": []
     },
     {
-      "item": "SLA definitions & breach process",
+      "item": "Secrets & credentials management process",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "env": [],
+      "cloud": []
     },
     {
-      "item": "Known recurring data anomalies & workarounds",
+      "item": "Tool versions & compatibility matrix",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "env": [],
+      "cloud": []
     },
     {
-      "item": "Data reconciliation processes",
+      "item": "Access provisioning guide for new team",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "env": [],
+      "cloud": []
     },
     {
-      "item": "Quality dashboard / reporting links",
+      "item": "VPN / network access requirements",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "env": [],
+      "cloud": []
     }
   ],
   "links": [],

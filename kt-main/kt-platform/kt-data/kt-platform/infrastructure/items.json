@@ -1,62 +1,62 @@
 {
-  "sectionId": "data_quality",
-  "projectId": "mmnnbubn4r42nfdjo0y",
-  "projectName": "Cigna",
-  "savedAt": "2026-03-14T01:46:14.310Z",
+  "sectionId": "infrastructure",
+  "projectId": "mmpo0s7mdpzkbk7zmfv",
+  "projectName": "kt-platform",
+  "savedAt": "2026-03-14T03:20:03.137Z",
   "items": [
     {
-      "item": "Data quality rules & validation logic",
+      "item": "Cloud architecture overview",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "orchestrator": [],
+      "compute": []
     },
     {
-      "item": "Quality monitoring & alerting setup",
+      "item": "Orchestration platform setup",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "orchestrator": [],
+      "compute": []
     },
     {
-      "item": "SLA definitions & breach process",
+      "item": "Compute & storage resources inventory",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "orchestrator": [],
+      "compute": []
     },
     {
-      "item": "Known recurring data anomalies & workarounds",
+      "item": "Infrastructure-as-code repo & docs",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "orchestrator": [],
+      "compute": []
     },
     {
-      "item": "Data reconciliation processes",
+      "item": "Deployment & CI/CD pipeline",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "orchestrator": [],
+      "compute": []
     },
     {
-      "item": "Quality dashboard / reporting links",
+      "item": "Cost overview & budget owners",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "orchestrator": [],
+      "compute": []
     }
   ],
   "links": [],

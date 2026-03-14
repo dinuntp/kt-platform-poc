@@ -5,9 +5,8 @@
 import "dotenv/config";
 import express   from "express";
 import cors      from "cors";
-// TODO: Uncomment when ANTHROPIC_API_KEY is ready
-// import Anthropic from "@anthropic-ai/sdk";
-import { PROMPTS as _PROMPTS }    from "./prompts/index.js"; // TODO: rename back to PROMPTS when API key ready
+import Anthropic from "@anthropic-ai/sdk";
+import { PROMPTS }    from "./prompts/index.js";
 import { CONNECTORS } from "./connectors/index.js";
 import fs   from "fs";
 import path from "path";
@@ -211,8 +210,7 @@ function loadProjectContext(folderName) {
 }
 
 const app       = express();
-// TODO: Uncomment when ANTHROPIC_API_KEY is ready
-// const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 const PORT      = process.env.PORT || 3001;
 
 app.use(cors({ origin: ["http://localhost:3001", "http://127.0.0.1:3001", "http://localhost:5173", "http://localhost:5174", "http://127.0.0.1:5173", "http://127.0.0.1:5174"] }));
@@ -266,6 +264,10 @@ app.get("/api/status", (req, res) => {
     status: "ok",
     client: process.env.CLIENT_NAME || "Unknown",
     claude: { configured: !!process.env.ANTHROPIC_API_KEY },
+    sources: {
+      github: { configured: !!process.env.GITHUB_TOKEN },
+      claude: { configured: !!process.env.ANTHROPIC_API_KEY },
+    },
   });
 });
 
@@ -368,7 +370,7 @@ app.post("/api/agent/populate", async (req, res) => {
   const {
     projectKeyword,
     sections,
-    promptTemplate: _promptTemplate, // used in Claude block — TODO: rename back when API key ready
+    promptTemplate,
     enabledSources = ["github"],
   } = req.body;
 
@@ -426,32 +428,22 @@ app.post("/api/agent/populate", async (req, res) => {
       send("log", { message: `🤖 Drafting [${targetSections.join(", ")}] from ${connector.meta.label}…` });
 
       try {
-        // TODO: Uncomment all of this block when ANTHROPIC_API_KEY is ready
-        // const prompt = PROMPTS.buildPopulate({
-        //   source: sourceId,
-        //   promptTemplate,
-        //   sourceData,
-        //   sectionsToPopulate: targetSections,
-        //   sectionLabels: PROMPTS.sectionLabels,
-        // });
-        // const response = await anthropic.messages.create({
-        //   model:      "claude-sonnet-4-5",
-        //   max_tokens: 2000,
-        //   system:     PROMPTS.getSystem(sourceId),
-        //   messages:   [{ role: "user", content: prompt }],
-        // });
-        // const raw    = response.content[0].text.trim();
-        // const clean  = raw.replace(/```json[\s\S]*?```|```/g, "").trim();
-        // const result = JSON.parse(clean);
-
-        // Mock response — replace with real API call above when key is ready
-        const result = {
-          drafts: targetSections.reduce((acc, sec) => {
-            acc[sec] = { content: `[Mock] Anthropic API not yet configured. Add ANTHROPIC_API_KEY to .env to enable AI drafts.`, verify: [] };
-            return acc;
-          }, {}),
-          confidence: "low - mocked response",
-        };
+        const prompt = PROMPTS.buildPopulate({
+          source: sourceId,
+          promptTemplate,
+          sourceData,
+          sectionsToPopulate: targetSections,
+          sectionLabels: PROMPTS.sectionLabels,
+        });
+        const response = await anthropic.messages.create({
+          model:      "claude-sonnet-4-5",
+          max_tokens: 4096,
+          system:     PROMPTS.getSystem(sourceId),
+          messages:   [{ role: "user", content: prompt }],
+        });
+        const raw    = response.content[0].text.trim();
+        const clean  = raw.replace(/```json[\s\S]*?```|```/g, "").trim();
+        const result = JSON.parse(clean);
 
         // Merge drafts — multiple sources annotate their contributions
         for (const [secId, draft] of Object.entries(result.drafts || {})) {
@@ -486,7 +478,7 @@ app.post("/api/agent/populate", async (req, res) => {
 // ─── AGENT: ASK ───────────────────────────────────────────────────────────
 
 app.post("/api/agent/ask", async (req, res) => {
-  const { question, projectKeyword, projectFolderName, ktContext, conversationHistory: _conversationHistory, enabledSources = ["github"] } = req.body;
+  const { question, projectKeyword, projectFolderName, ktContext, conversationHistory, enabledSources = ["github"] } = req.body;
   if (!question) return res.status(400).json({ error: "question required" });
   const safeSources = sanitiseSources(enabledSources);
   const safeFolder  = projectFolderName ? safeFolderName(projectFolderName) : null;
@@ -496,7 +488,7 @@ app.post("/api/agent/ask", async (req, res) => {
     const activeSources = [];
 
     // Load full KT context from disk if project has been saved
-    let _richKtContext = ktContext || "";
+    let richKtContext = ktContext || "";
     if (safeFolder) {
       const diskContext = loadProjectContext(safeFolder);
       if (diskContext) {
@@ -521,7 +513,7 @@ app.post("/api/agent/ask", async (req, res) => {
           return lines.join("\n");
         }).filter(Boolean);
 
-        if (sections.length) _richKtContext = sections.join("\n\n");
+        if (sections.length) richKtContext = sections.join("\n\n");
         activeSources.push("KT Docs (disk)");
       }
     } else if (ktContext) {
@@ -540,22 +532,18 @@ app.post("/api/agent/ask", async (req, res) => {
       } catch { /* skip failed sources quietly */ }
     }
 
-    // TODO: Uncomment all of this block when ANTHROPIC_API_KEY is ready
-    // const { system, userMessage } = PROMPTS.buildAsk({
-    //   contextParts,
-    //   ktContext: richKtContext,
-    //   question,
-    // });
-    // const response = await anthropic.messages.create({
-    //   model:      "claude-sonnet-4-5",
-    //   max_tokens: 1000,
-    //   system,
-    //   messages:   [...(conversationHistory||[]), { role:"user", content: userMessage }],
-    // });
-    // res.json({ answer: response.content[0].text, sources: activeSources.length ? activeSources : ["General Knowledge"] });
-
-    // Mock response — replace with real API call above when key is ready
-    res.json({ answer: "[Mock] Anthropic API not yet configured. Add ANTHROPIC_API_KEY to .env to enable Ask Agent.", sources: activeSources.length ? activeSources : ["General Knowledge"] });
+    const { system, userMessage } = PROMPTS.buildAsk({
+      contextParts,
+      ktContext: richKtContext,
+      question,
+    });
+    const response = await anthropic.messages.create({
+      model:      "claude-sonnet-4-5",
+      max_tokens: 1000,
+      system,
+      messages:   [...(conversationHistory||[]).map(m => ({ role: m.role, content: m.content })), { role:"user", content: userMessage }],
+    });
+    res.json({ answer: response.content[0].text, sources: activeSources.length ? activeSources : ["General Knowledge"] });
 
   } catch (err) {
     res.status(500).json({ error: err.message });

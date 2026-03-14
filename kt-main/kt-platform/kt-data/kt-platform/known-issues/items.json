@@ -1,62 +1,62 @@
 {
-  "sectionId": "data_quality",
-  "projectId": "mmnnbubn4r42nfdjo0y",
-  "projectName": "Cigna",
-  "savedAt": "2026-03-14T01:46:14.310Z",
+  "sectionId": "known_issues",
+  "projectId": "mmpo0s7mdpzkbk7zmfv",
+  "projectName": "kt-platform",
+  "savedAt": "2026-03-14T03:20:03.169Z",
   "items": [
     {
-      "item": "Data quality rules & validation logic",
+      "item": "Open bug inventory with severity",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "issueType": [],
+      "severity": "Critical"
     },
     {
-      "item": "Quality monitoring & alerting setup",
+      "item": "Tech debt register & priority",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "issueType": [],
+      "severity": "Critical"
     },
     {
-      "item": "SLA definitions & breach process",
+      "item": "Active workarounds & their risks",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "issueType": [],
+      "severity": "Critical"
     },
     {
-      "item": "Known recurring data anomalies & workarounds",
+      "item": "Performance bottlenecks & limits",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "issueType": [],
+      "severity": "Critical"
     },
     {
-      "item": "Data reconciliation processes",
+      "item": "Security vulnerabilities & mitigations",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "issueType": [],
+      "severity": "Critical"
     },
     {
-      "item": "Quality dashboard / reporting links",
+      "item": "Deprecated components still in use",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "issueType": [],
+      "severity": "Critical"
     }
   ],
   "links": [],

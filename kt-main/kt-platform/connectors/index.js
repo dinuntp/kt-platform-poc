@@ -30,7 +30,8 @@ export const CONNECTORS = {
         try { connected = await connector.testConnection(); }
         catch (e) { error = e.message; }
       }
-      results[id] = { ...connector.meta, configured, connected, error };
+      const mode = (connected && connector.getConnectionMode) ? await connector.getConnectionMode() : null;
+      results[id] = { ...connector.meta, configured, connected, error, mode };
     }
     // Include unconfigured connectors so the UI can still show them
     for (const id of CONNECTOR_IDS) {

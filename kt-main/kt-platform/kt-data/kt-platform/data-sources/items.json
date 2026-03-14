@@ -1,62 +1,62 @@
 {
-  "sectionId": "data_quality",
-  "projectId": "mmnnbubn4r42nfdjo0y",
-  "projectName": "Cigna",
-  "savedAt": "2026-03-14T01:46:14.310Z",
+  "sectionId": "data_sources",
+  "projectId": "mmpo0s7mdpzkbk7zmfv",
+  "projectName": "kt-platform",
+  "savedAt": "2026-03-14T03:20:03.129Z",
   "items": [
     {
-      "item": "Data quality rules & validation logic",
+      "item": "Source system inventory with owners",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "sourceType": [],
+      "access": []
     },
     {
-      "item": "Quality monitoring & alerting setup",
+      "item": "Ingestion method per source",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "sourceType": [],
+      "access": []
     },
     {
-      "item": "SLA definitions & breach process",
+      "item": "Refresh cadence & latency expectations",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "sourceType": [],
+      "access": []
     },
     {
-      "item": "Known recurring data anomalies & workarounds",
+      "item": "Schema documentation per source",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "sourceType": [],
+      "access": []
     },
     {
-      "item": "Data reconciliation processes",
+      "item": "Source system contacts & escalation",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "sourceType": [],
+      "access": []
     },
     {
-      "item": "Quality dashboard / reporting links",
+      "item": "Known data quality issues per source",
       "status": "Not Started",
       "notes": "",
       "link": "",
       "docStatus": "—",
-      "framework": [],
-      "slaType": "None defined"
+      "sourceType": [],
+      "access": []
     }
   ],
   "links": [],
